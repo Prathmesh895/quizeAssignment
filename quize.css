@@ -1,0 +1,48 @@
+body{
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px 1px #ccc;
+   padding: 20px;
+    margin:50px 200px ;
+    text-align: center;
+}
+.Hello{
+    margin: 0;
+    text-align: center;
+    color: rgb(77, 180, 209);
+    padding-top: 20px;
+    
+}
+.h2{
+   
+    font: bold;
+}
+.namebar>.Name{
+   margin: 0;
+   
+}
+.button{
+    background-color: #24a0ed;
+    border-color: #24a0ed;
+    border: none;
+    border-radius: 2px;
+    height: 20px;
+}
+.select_button1{
+    padding: 0px;
+    margin: 10px;
+    border-radius: 5px;
+    border-color: blue;
+    background-color: #b3dcf6;
+    width: 30%;
+    height: 35px;
+    font-size: 16px;
+    color: rgb(9, 4, 64);
+}
+.select_button1:hover{
+    background-color: #24a0ed;
+    color: white;
+}
+.button:hover{
+    background-color: #24a0ed;
+    color: white;
+}
