@@ -25,27 +25,29 @@ body{
     border-color: #24a0ed;
     border: none;
     border-radius: 2px;
-    height: 20px;
+    height: 25px;
+    color: white;
+    padding: auto;
 }
 .select_button1{
     padding: 0px;
     margin: 10px;
     border-radius: 5px;
-    border-color: blue;
-    background-color: #b3dcf6;
+    background-color: #24a0ed;
     width: 30%;
     height: 35px;
     font-size: 16px;
-    color: rgb(9, 4, 64);
+    color:white;
+    border: none;
 }
 .select_button1:hover{
     background-color: #24a0ed;
-    color: white;
+    color: black;
 }
 .button:hover{
-    background-color: #24a0ed;
-    color: white;
+    background-color: #ccc;
+    color:black;
 }
-[class*="col-"] {
+[class*="col-3"] {
     width: 100%;
 }
