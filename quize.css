@@ -46,3 +46,6 @@ body{
     background-color: #24a0ed;
     color: white;
 }
+[class*="col-"] {
+    width: 100%;
+}
