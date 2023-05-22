@@ -1,26 +1,28 @@
-body{
+body {
     border-radius: 5px;
     box-shadow: 5px 5px 5px 1px #ccc;
-   padding: 20px;
-    margin:50px 200px ;
     text-align: center;
 }
-.Hello{
+
+.Hello {
     margin: 0;
     text-align: center;
     color: rgb(77, 180, 209);
     padding-top: 20px;
-    
+
 }
-.h2{
-   
+
+.h2 {
+
     font: bold;
 }
-.namebar>.Name{
-   margin: 0;
-   
+
+.namebar>.Name {
+    margin: 0;
 }
-.button{
+
+/*Enter button style*/
+.button {
     background-color: #24a0ed;
     border-color: #24a0ed;
     border: none;
@@ -28,26 +30,51 @@ body{
     height: 25px;
     color: white;
     padding: auto;
+    font-size: 16px;
 }
-.select_button1{
+
+.col-3 {
+    width: 100%;
+    min-width: auto;
+
+}
+
+/* select button for selecting quiz type*/
+.select_button1 {
     padding: 0px;
     margin: 10px;
     border-radius: 5px;
     background-color: #24a0ed;
     width: 30%;
+    min-width: auto;
     height: 35px;
+    min-height: auto;
     font-size: 16px;
-    color:white;
+    color: white;
     border: none;
 }
-.select_button1:hover{
+
+.select_button1:hover {
     background-color: #24a0ed;
     color: black;
 }
-.button:hover{
+
+.button:hover {
     background-color: #ccc;
-    color:black;
+    color: black;
 }
-[class*="col-3"] {
-    width: 100%;
+@media screen and (max-width: 380px) {
+    body {
+        text-align: center;
+    }
+
+    .select_button1 {
+        width: 70%;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #24a0ed;
+        color: white;
+        border: none;
+
+    }
 }
