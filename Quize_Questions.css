@@ -34,6 +34,7 @@ body{
     .button {
         width: 70%;
         height: 70px;
+        margin: auto;
         font-size: 30px;
         border-radius: 5px;
         background-color: #24a0ed;
