@@ -1,1 +1,43 @@
-<h1>hi</h1>
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Quiz-Quistions</title>
+    <link rel="stylesheet" href="Quize_Questions.css">
+    <!--<script src="q.js"></script>-->
+</head>
+
+<body>
+    <center>
+        <div class="question" id="question"></div>
+    </center>
+    <button id="option1" class="button"></button>
+    <button id="option2" class="button"></button><br>
+    <button id="option3" class="button"></button>
+    <button id="option4" class="button"></button>
+    
+    <script>
+       const question = document.getElementById("question")
+        const option1 = document.getElementById("option1")
+        const option2 = document.getElementById("option2")
+        const option3 = document.getElementById("option3")
+        const option4 = document.getElementById("option4")
+    
+
+        const questions= {
+            question: "A bag contains 4 white, 5 red and 6 blue balls. Three balls are drawn at random from the bag. The probability that all of them are red, is:",
+            option:["1/22", "3/22", "2/91","2/77"],
+            answer:0
+        }
+        
+    
+//first code
+        question.textContent = questions.question;
+        option1.textContent = questions.option[0];
+        option2.textContent = questions.option[1];
+        option3.textContent = questions.option[2];
+        option4.textContent = questions.option[3];
+
+    </script>
+</body>
+</html>
