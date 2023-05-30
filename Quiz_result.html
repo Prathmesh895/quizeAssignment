@@ -31,15 +31,20 @@
   </style>
 <body>
     <h1 class="h1">Quiz Result</h1>
- <p><span></span>your result is: <span></span></p>
+ <p><b><span id="userName"></span></b>  your result is: <span></span></p>
  <p>Total Time Taken: <span></span>seconds</p>
- <p>Total Quetion: <span></span></p> 
+ <p>Total Quetion:10</p> 
  <p>Attempt: <span></span></p>  
  <p>Correct: <span></span></p>
  <p>Wrong: <span></span></p>
  <p>Percentage: <span></span></p>
 <button class="start_again"><a href="Quize_Questions.html">Start Again</button>
 <button class="start_again"><a class="a" href="index.html">Go to Home</button>
+    <script>
+  var storedData = localStorage.getItem('Username');
+const enteredname=document.getElementById('userName')
+            enteredname.textContent=storedData;
+    </script>
 </body>
 
 </html>

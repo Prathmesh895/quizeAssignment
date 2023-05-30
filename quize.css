@@ -3,6 +3,9 @@ body {
     box-shadow: 5px 5px 5px 1px #ccc;
     text-align: center;
 }
+.hidden{
+    display: none;
+}
 
 .Hello {
     margin: 0;
@@ -30,6 +33,16 @@ body {
     height: 25px;
     color: white;
     padding: auto;
+    font-size: 16px;
+}
+.start-btn {
+    background-color: #24a0ed;
+    border-color: #24a0ed;
+    border: none;
+    border-radius: 2px;
+    height: 25px;
+    color: white;
+    margin: 20px;
     font-size: 16px;
 }
 
@@ -63,6 +76,12 @@ body {
     background-color: #ccc;
     color: black;
 }
+#demo{
+    float: right;
+}
+#content {
+    display: none;
+  }
 @media screen and (max-width: 480px) {
     body {
         text-align: center;

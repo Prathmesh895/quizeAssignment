@@ -1,36 +1,73 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" >
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="icon" href="image\desktop-computer.png">
-        <link rel="stylesheet" href="quize.css">
-        <script src="quiz-main.js"></script>
-        
-        <title>Quize</title>
-    </head>
-    <body>
-        <!--Heading 1-->
-        <h1 class="Hello" id="Hello">Hello User!</h1>
-        <p class="h2">Enter your Name to Continue Quiz</p>
-        <!-- Code Get Name From user -->
-        <center><form action=""><div class="namebar" id="namebar" >
-           <input type="text" class="Name" id="Name" placeholder="Enter Your Name" >
-           <button class="button" id="button">Enter</button>
-        </div></form>
-    </center>
-    <div class="subh1"><p>You'll have 10 seconds to answer each quetion</p><hr></div>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image\desktop-computer.png">
+    <link rel="stylesheet" href="quize.css">
+    <title>Quize</title>
+</head>
+
+<body>
+    <p id="demo"></p><br><br>
+    <!--Heading 1-->
+    <h1 class="Hello" id="Hello">Hello User!</h1>
+    <!-- Code Get Name From user -->
+    <form id="form" req>
+        <label for="UserName">Please enter your name </label><br><br>
+        <input type="text" id="UserName"  placeholder="Enter your name">
+        <button type="submit" class="button">Enter</button>
+    </form><br>
+    <button id="start-btn" class="start-btn">Start Quiz</button>
+    <div id="optioncontainer" class="hidden">
+    <div class="subh1">
+        <p>You'll have 10 seconds to answer each quetion</p>
+        <hr>
+    </div>
     <h1 class="Hello" id="Hello">Select Category</h1>
     <!--Select Quiz type Buttons-->
-        <div class="col-3">
-            <button class="select_button1" onclick="select_button1()">Pipes And Cisterns</button>
-            <button class="select_button1" onclick="select_button1()">Probability</button><br>
-            <button class="select_button1" onclick="select_button1()">Problem on Age</button>
-            <button class="select_button1" onclick="select_button1()">Profit And Loss</button>
+    <div class="col-3">
+        <button class="select_button1" id="button1" onclick="select_button1()">Pipes And Cisterns</button>
+        <button class="select_button1" onclick="select_button1()">Probability</button><br>
+        <button class="select_button1" onclick="select_button1()">Problem on Age</button>
+        <button class="select_button1" onclick="select_button1()">Profit And Loss</button>
 
-        </div>
-        
+    </div>
+</div>
+    <script>
+        const UserName = document.getElementById('UserName');
+        const form = document.getElementById('form');
 
-        
-    </body>
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            const User_Name = UserName.value;
+            if (User_Name === "") {
+                alert("Please Enter Your Name");
+                return;
+            }
+            localStorage.setItem('Username', User_Name);
+
+        })
+        function select_button1() {
+            //Move to another page
+            alert("You will redirect to Quiz \r Timer will be started ");
+            window.location.href = "Quize_Questions.html";
+
+        }
+        setInterval(myTimer, 1000);
+
+        function myTimer() {
+            const d = new Date();
+            document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        }
+      document.getElementById('start-btn').addEventListener('click', function() {
+      var contentElement = document.getElementById('optioncontainer');
+      contentElement.classList.remove('hidden');
+    });
+    </script>
+
+
+</body>
+
 </html>
